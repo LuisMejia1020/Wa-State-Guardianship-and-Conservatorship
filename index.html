@@ -9,7 +9,8 @@
   <script src="https://cdn.jsdelivr.net/npm/jquery@3.6.4/dist/jquery.slim.min.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"></script>
-  <link rel="stylesheet" type="text/css" href="styles.css">
+  <link rel="stylesheet" type="text/css" href="./styles.css">
+  <script src="index.js"></script>
 </head>
 <body>
   <header>
@@ -41,8 +42,8 @@
       <button type="button" class="btn btn-secondary dropdown-toggle dropdown-toggle-split" data-toggle="dropdown">
       </button>
       <div class="dropdown-menu">
-        <a class="dropdown-item" href="#">Vision and Mission</a>
-        <a class="dropdown-item" href="#">Our history</a>
+        <a class="dropdown-item" onclick="mision()" href="#">Vision and Mission</a>
+        <a class="dropdown-item" onclick="history()" href="#">Our history</a>
       </div>
     </div>
     
@@ -51,8 +52,8 @@
       <button type="button" class="btn btn-secondary dropdown-toggle dropdown-toggle-split" data-toggle="dropdown">
       </button>
       <div class="dropdown-menu">
-        <a class="dropdown-item" href="#">?</a>
-        <a class="dropdown-item" href="#">?</a>
+        <a class="dropdown-item" href=#informativa>Guardianship</a>
+        <a class="dropdown-item" href=#informativa2>Conservatorship</a>
       </div>
     </div>
 
@@ -61,21 +62,12 @@
       <button type="button" class="btn btn-secondary dropdown-toggle dropdown-toggle-split" data-toggle="dropdown">
       </button>
       <div class="dropdown-menu">
-        <a class="dropdown-item" href="#">Pierce County</a>
-        <a class="dropdown-item" href="#">King County</a>
+        <a class="dropdown-item" href="https://linxonline.co.pierce.wa.us/linxweb/Account/Logon.cfm?logon_referer=%2Flinxweb%2FAccount%2FAuthenticate%2Ecfm%3F">Pierce County</a>
+        <a class="dropdown-item" href="https://dja-prd-ecexap1.kingcounty.gov/?q=Home">King County</a>
       </div>
     </div>
 
-    <div class="btn-group">
-      <button type="button" class="btn btn-secondary">What process you want to know?</button>
-      <button type="button" class="btn btn-secondary dropdown-toggle dropdown-toggle-split" data-toggle="dropdown">
-      </button>
-      <div class="dropdown-menu">
-        <a class="dropdown-item" href="#">Guardianship</a>
-        <a class="dropdown-item" href="#">Conservatorship</a>
-        <a class="dropdown-item" href="#">Guardianship/probate</a>
-      </div>
-    </div>
+  
 
     <div class="btn-group">
       <button type="button" class="btn btn-secondary">Additional information</button>
@@ -88,111 +80,244 @@
     </div>
   
   <main>
-    <section id="intro">
-      <h2>Welcome to our educational website!</h2>
-      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum eu justo ut orci congue mattis. In convallis tempus dui, vel finibus justo scelerisque id. Mauris sollicitudin dapibus felis, nec rhoncus libero commodo et. Sed id tortor in metus sollicitudin mattis. Nunc scelerisque urna mauris, in fringilla turpis congue sed.</p>
-    </section>
 
-    <section id="what?">
-      <h2>Do you need a Guardian or a Conservator or both?</h2>
-      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum eu justo ut orci congue mattis. In convallis tempus dui, vel finibus justo scelerisque id. Mauris sollicitudin dapibus felis, nec rhoncus libero commodo et. Sed id tortor in metus sollicitudin mattis. Nunc scelerisque urna mauris, in fringilla turpis congue sed.</p>
-    </section>
+    <div class="container-fluid guardianship">
 
-    <section id="what?">
-      <h2>How do you petition?</h2>
-      <p>Guardianship</p>
-      <ul>
-          <li> <a href="https://app.leg.wa.gov/RCW/default.aspx?cite=11.130.270#:~:text=(1)%20A%20person%20interested%20in,a%20guardian%20for%20the%20adult.&text=(j)%20Whether%20the%20respondent%20needs,court%20or%20understand%20court%20proceedings.">Petition for appointment of guardian for adult...11.130.270</a></li>
+      <div class="inicio">
+        <section id="informativa">
+          <h2>Welcome to our educational website!</h2>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum eu justo ut orci congue mattis. In convallis tempus dui, vel finibus justo scelerisque id. Mauris sollicitudin dapibus felis, nec rhoncus libero commodo et. Sed id tortor in metus sollicitudin mattis. Nunc scelerisque urna mauris, in fringilla turpis congue sed.</p>
+        </section>
+    
+        <section id="informativa">
+          <h2>Do you need a Guardian or a Conservator or both?</h2>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum eu justo ut orci congue mattis. In convallis tempus dui, vel finibus justo scelerisque id. Mauris sollicitudin dapibus felis, nec rhoncus libero commodo et. Sed id tortor in metus sollicitudin mattis. Nunc scelerisque urna mauris, in fringilla turpis congue sed.</p>
+        </section>
+    
+      </div>
+
+      <section id="informativa">
+        <h2>How do you petition?</h2>
+        <p>Guardianship</p>
+        <ul>
+            <li> <a href="https://app.leg.wa.gov/RCW/default.aspx?cite=11.130.270#:~:text=(1)%20A%20person%20interested%20in,a%20guardian%20for%20the%20adult.&text=(j)%20Whether%20the%20respondent%20needs,court%20or%20understand%20court%20proceedings.">Petition for appointment of guardian for adult...11.130.270</a></li>
+              <li>
+                <a href="https://app.leg.wa.gov/RCW/default.aspx?cite=11.130.275">Notice of hearing for appointment of guardian for adult... 11.130.275 </a>
+              </li>
+        </ul>
+  
+        <p>Conservatorship</p>
+        <ul>
             <li>
-              <a href="https://app.leg.wa.gov/RCW/default.aspx?cite=11.130.275">Notice of hearing for appointment of guardian for adult... 11.130.275 </a>
+              <a href="https://app.leg.wa.gov/RCW/default.aspx?cite=11.130.360">Basis for appointment of conservator... 11.130.360</a>
             </li>
-      </ul>
-
-      <p>Conservatorship</p>
-      <ul>
+            <li>
+              <a href="https://app.leg.wa.gov/RCW/default.aspx?cite=11.130.365">Petition for appointment of conservator... 11.130.365</a>
+            </li>
+            <li>
+              <a href="https://app.leg.wa.gov/RCW/default.aspx?cite=11.130.370">Notice and hearing for appointment of conservator... 11.130.370</a>
+            </li>
+        </ul>
+      </section>
+  
+      <section id="informativa">
+        <h2>How do you get appointed?</h2>
+        <p>Guardianship</p>
+        <ul>
           <li>
-            <a href="https://app.leg.wa.gov/RCW/default.aspx?cite=11.130.360">Basis for appointment of conservator... 11.130.360</a>
+            <a href="https://app.leg.wa.gov/RCW/default.aspx?cite=11.130.280">Appointment and role of court visitor... 11.130.280</a>
           </li>
           <li>
-            <a href="https://app.leg.wa.gov/RCW/default.aspx?cite=11.130.365">Petition for appointment of conservator... 11.130.365</a>
+            <a href="https://app.leg.wa.gov/RCW/default.aspx?cite=11.130.285">Appointment and role of attorney for adult... 11.130.285</a>
+          </li>
+        </ul>
+  
+        <p>Conservatorship</p>
+        <ul>
+          <li>
+            <a href="https://app.leg.wa.gov/RCW/default.aspx?cite=11.130.380">Appointment and role of court visitor... 11.130.380</a>
           </li>
           <li>
-            <a href="https://app.leg.wa.gov/RCW/default.aspx?cite=11.130.370">Notice and hearing for appointment of conservator... 11.130.370</a>
+            <a href="https://app.leg.wa.gov/RCW/default.aspx?cite=11.130.385">Appointment and role of attorney... 11.130.385</a>
           </li>
-      </ul>
-    </section>
+        </ul>
+      </section>
+  
+      <section id="informativa">
+        <h2>What happens when you're appointed?</h2>
+        <p>Guardianship</p>
+        <ul>
+          <li>
+            <a href="https://app.leg.wa.gov/RCW/default.aspx?cite=11.130.310">Order of appointment for guardian... 11.130.310</a>
+          </li>
+        </ul>
+  
+        <p>Conservatorship</p>
+        <ul>
+          <li>
+            <a href="https://app.leg.wa.gov/RCW/default.aspx?cite=11.130.420">Order of appointment of conservator... 11.130.420</a>
+          </li>
+        </ul>
+      </section>
+  
+      <section>
+        <h5>to review your case in Pierce County go to</h5>
+        <a href="https://linxonline.co.pierce.wa.us/linxweb/Account/Logon.cfm?logon_referer=%2Flinxweb%2FMain%2Ecfm%3F">"https://linxonline.co.pierce.wa.us/linxweb/Account/Logon.cfm?logon_referer=%2Flinxweb%2FMain%2Ecfm%3F"</a>
+      </section>
+  
+      <section id="what?">
+        <h2>Procedures</h2>
+        <p>The procedure for Guardianship:</p>
+        <ul>
+          <li></li>
+          <li>?</li>
+        </ul>
+      </section>
+  
+      <section>
+        <h2>Pierce Procedures</h2>
+        <ul>
+          <li>
+  
+          </li>
+        </ul>
+      </section>
+  
+      <section id="what?">
+        <h2>What is your 90 day obligation?</h2>
+        <p></p>
+      </section>
+  
+      <section id="content">
+        <h2>Guardianship and Conservatorship Overview</h2>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum eu justo ut orci congue mattis. In convallis tempus dui, vel finibus justo scelerisque id. Mauris sollicitudin dapibus felis, nec rhoncus libero commodo et. Sed id tortor in metus sollicitudin mattis. Nunc scelerisque urna mauris, in fringilla turpis congue sed.</p>
+      </section>
 
-    <section id="what?">
-      <h2>How do you get appointed?</h2>
-      <p>Guardianship</p>
-      <ul>
-        <li>
-          <a href="https://app.leg.wa.gov/RCW/default.aspx?cite=11.130.280">Appointment and role of court visitor... 11.130.280</a>
-        </li>
-        <li>
-          <a href="https://app.leg.wa.gov/RCW/default.aspx?cite=11.130.285">Appointment and role of attorney for adult... 11.130.285</a>
-        </li>
-      </ul>
+    
 
-      <p>Conservatorship</p>
-      <ul>
-        <li>
-          <a href="https://app.leg.wa.gov/RCW/default.aspx?cite=11.130.380">Appointment and role of court visitor... 11.130.380</a>
-        </li>
-        <li>
-          <a href="https://app.leg.wa.gov/RCW/default.aspx?cite=11.130.385">Appointment and role of attorney... 11.130.385</a>
-        </li>
-      </ul>
-    </section>
 
-    <section id="">
-      <h2>What happens when you're appointed?</h2>
-      <p>Guardianship</p>
-      <ul>
-        <li>
-          <a href="https://app.leg.wa.gov/RCW/default.aspx?cite=11.130.310">Order of appointment for guardian... 11.130.310</a>
-        </li>
-      </ul>
+        <section id="informativa2">
+          <h2>Welcome to our educational website!</h2>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum eu justo ut orci congue mattis. In convallis tempus dui, vel finibus justo scelerisque id. Mauris sollicitudin dapibus felis, nec rhoncus libero commodo et. Sed id tortor in metus sollicitudin mattis. Nunc scelerisque urna mauris, in fringilla turpis congue sed.</p>
+        </section>
+    
+        <section id="informativa2">
+          <h2>Do you need a Guardian or a Conservator or both?</h2>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum eu justo ut orci congue mattis. In convallis tempus dui, vel finibus justo scelerisque id. Mauris sollicitudin dapibus felis, nec rhoncus libero commodo et. Sed id tortor in metus sollicitudin mattis. Nunc scelerisque urna mauris, in fringilla turpis congue sed.</p>
+        </section>
+    
+        <section id="informativa2">
+          <h2>How do you petition?</h2>
+          <p>Guardianship</p>
+          <ul>
+              <li> <a href="https://app.leg.wa.gov/RCW/default.aspx?cite=11.130.270#:~:text=(1)%20A%20person%20interested%20in,a%20guardian%20for%20the%20adult.&text=(j)%20Whether%20the%20respondent%20needs,court%20or%20understand%20court%20proceedings.">Petition for appointment of guardian for adult...11.130.270</a></li>
+                <li>
+                  <a href="https://app.leg.wa.gov/RCW/default.aspx?cite=11.130.275">Notice of hearing for appointment of guardian for adult... 11.130.275 </a>
+                </li>
+          </ul>
+    
+          <p>Conservatorship</p>
+          <ul>
+              <li>
+                <a href="https://app.leg.wa.gov/RCW/default.aspx?cite=11.130.360">Basis for appointment of conservator... 11.130.360</a>
+              </li>
+              <li>
+                <a href="https://app.leg.wa.gov/RCW/default.aspx?cite=11.130.365">Petition for appointment of conservator... 11.130.365</a>
+              </li>
+              <li>
+                <a href="https://app.leg.wa.gov/RCW/default.aspx?cite=11.130.370">Notice and hearing for appointment of conservator... 11.130.370</a>
+              </li>
+          </ul>
+        </section>
+    
+        <section id="informativa2">
+          <h2>How do you get appointed?</h2>
+          <p>Guardianship</p>
+          <ul>
+            <li>
+              <a href="https://app.leg.wa.gov/RCW/default.aspx?cite=11.130.280">Appointment and role of court visitor... 11.130.280</a>
+            </li>
+            <li>
+              <a href="https://app.leg.wa.gov/RCW/default.aspx?cite=11.130.285">Appointment and role of attorney for adult... 11.130.285</a>
+            </li>
+          </ul>
+    
+          <p>Conservatorship</p>
+          <ul>
+            <li>
+              <a href="https://app.leg.wa.gov/RCW/default.aspx?cite=11.130.380">Appointment and role of court visitor... 11.130.380</a>
+            </li>
+            <li>
+              <a href="https://app.leg.wa.gov/RCW/default.aspx?cite=11.130.385">Appointment and role of attorney... 11.130.385</a>
+            </li>
+          </ul>
+        </section>
+    
+        <section id="informativa2">
+          <h2>What happens when you're appointed?</h2>
+          <p>Guardianship</p>
+          <ul>
+            <li>
+              <a href="https://app.leg.wa.gov/RCW/default.aspx?cite=11.130.310">Order of appointment for guardian... 11.130.310</a>
+            </li>
+          </ul>
+    
+          <p>Conservatorship</p>
+          <ul>
+            <li>
+              <a href="https://app.leg.wa.gov/RCW/default.aspx?cite=11.130.420">Order of appointment of conservator... 11.130.420</a>
+            </li>
+          </ul>
+        </section>
+    
+        <section>
+          <h5>to review your case in Pierce County go to</h5>
+          <a href="https://linxonline.co.pierce.wa.us/linxweb/Account/Logon.cfm?logon_referer=%2Flinxweb%2FMain%2Ecfm%3F">"https://linxonline.co.pierce.wa.us/linxweb/Account/Logon.cfm?logon_referer=%2Flinxweb%2FMain%2Ecfm%3F"</a>
+        </section>
+    
+        <section id="what?">
+          <h2>Procedures</h2>
+          <p>The procedure for Guardianship:</p>
+          <ul>
+            <li></li>
+            <li>?</li>
+          </ul>
+        </section>
+    
+        <section>
+          <h2>Pierce Procedures</h2>
+          <ul>
+            <li>
+    
+            </li>
+          </ul>
+        </section>
+    
+        <section id="what?">
+          <h2>What is your 90 day obligation?</h2>
+          <p></p>
+        </section>
+    
+        <section id="content">
+          <h2>Guardianship and Conservatorship Overview</h2>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum eu justo ut orci congue mattis. In convallis tempus dui, vel finibus justo scelerisque id. Mauris sollicitudin dapibus felis, nec rhoncus libero commodo et. Sed id tortor in metus sollicitudin mattis. Nunc scelerisque urna mauris, in fringilla turpis congue sed.</p>
+        </section>
+    
+      
+      
+  
+    </div>
 
-      <p>Conservatorship</p>
-      <ul>
-        <li>
-          <a href="https://app.leg.wa.gov/RCW/default.aspx?cite=11.130.420">Order of appointment of conservator... 11.130.420</a>
-        </li>
-      </ul>
-    </section>
-
-    <section id="what?">
-      <h2>What is the procedure?</h2>
-      <ul>
-        <li>?</li>
-        <li>?</li>
-      </ul>
-    </section>
-
-    <section>
-      <h5>to review your case in Pierce County go to</h5>
-      <a href="https://linxonline.co.pierce.wa.us/linxweb/Account/Logon.cfm?logon_referer=%2Flinxweb%2FMain%2Ecfm%3F">"https://linxonline.co.pierce.wa.us/linxweb/Account/Logon.cfm?logon_referer=%2Flinxweb%2FMain%2Ecfm%3F"</a>
-    </section>
-
-    <section id="what?">
-      <h2>What is your 90 day obligation?</h2>
-      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum eu justo ut orci congue mattis. In convallis tempus dui, vel finibus justo scelerisque id. Mauris sollicitudin dapibus felis, nec rhoncus libero commodo et. Sed id tortor in metus sollicitudin mattis. Nunc scelerisque urna mauris, in fringilla turpis congue sed.</p>
-    </section>
-
-    <section id="content">
-      <h2>Guardianship and Conservatorship Overview</h2>
-      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum eu justo ut orci congue mattis. In convallis tempus dui, vel finibus justo scelerisque id. Mauris sollicitudin dapibus felis, nec rhoncus libero commodo et. Sed id tortor in metus sollicitudin mattis. Nunc scelerisque urna mauris, in fringilla turpis congue sed.</p>
-      <!-- Add more content as needed -->
-    </section>
-
+  
    
   </main>
 
   <footer>
-    <p>&copy; 2023 Your Website Name. All rights reserved.</p>
+    <p>&copy; 2023 Washington Guardianships. All rights reserved.</p>
   </footer>
 
-  <script src="script.js"></script>
+ 
+
+  
 </body>
 </html>
