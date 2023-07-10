@@ -38,3 +38,11 @@ function mision(){
 function vision(){
   alert("I need info, Liz")
 }
+
+function openPDF() {
+  window.open('forms/90 Day- Plan - Notice of Filing-2.pdf', '_blank');
+}
+
+function openPDF2() {
+  window.open('forms/Notice of Hearing 16pt (7).pdf', '_blank');
+}
