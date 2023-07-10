@@ -93,6 +93,13 @@ body{
   border: 1px solid #ccc;
   width: 200px;
   text-align: center;
+  font-family: Arial, sans-serif;
+}
+
+.pdf-section h2 {
+  margin: 0;
+  font-size: 16px;
+  color: #333;
 }
 
 

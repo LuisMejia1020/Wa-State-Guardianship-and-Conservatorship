@@ -46,3 +46,8 @@ function openPDF() {
 function openPDF2() {
   window.open('forms/Notice of Hearing 16pt (7).pdf', '_blank');
 }
+
+
+function openPDF3() {
+  window.open('forms/90 Day- Checklist For File (1).pdf', '_blank');
+}
