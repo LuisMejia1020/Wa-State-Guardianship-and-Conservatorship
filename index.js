@@ -93,3 +93,43 @@ function openPDF12() {
 function openPDF13() {
   window.open('forms/Form - substantial change in circumstances.pdf', '_blank');
 }
+
+function openPDF14() {
+  window.open('forms/Form - Order Appointing Court Visitor.pdf', '_blank');
+}
+
+function openPDF15() {
+  window.open('forms/Form - Order Appointing full or limited G-C.pdf', '_blank');
+}
+
+function openPDF16() {
+  window.open('forms/Form - Order Appointing Lawyer.pdf', '_blank');
+}
+
+function openPDF17() {
+  window.open('forms/Form - Order Appointing Succesor G-C.pdf', '_blank');
+}
+
+function openPDF18() {
+  window.open('forms/Form - Order Approving G-C plan.pdf', '_blank');
+}
+
+function openPDF19() {
+  window.open('forms/Form - Order Approving G-C Report.pdf', '_blank');
+}
+
+function openPDF20() {
+  window.open('forms/Form - Petition for G-C or PA of an Adult.pdf', '_blank');
+}
+
+function openPDF21() {
+  window.open('forms/Form - Proof of Service.pdf', '_blank');
+}
+
+function openPDF22() {
+  window.open('forms/Form - Guardian - Conservators Plan and Motion to Approve.pdf', '_blank');
+}
+
+function openPDF23() {
+  window.open('forms/Notice of Hearing 16pt (7).pdf', '_blank');
+}
