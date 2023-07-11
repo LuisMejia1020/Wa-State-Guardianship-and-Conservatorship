@@ -86,6 +86,12 @@ body{
   text-align: center;
 }
 
+.outer-div{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
 .pdf-section {
   cursor: pointer;
   padding: 10px;
@@ -94,13 +100,20 @@ body{
   width: 200px;
   text-align: center;
   font-family: Arial, sans-serif;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
 .pdf-section h2 {
-  margin: 0;
+  margin: 10;
   font-size: 16px;
   color: #333;
 }
+
+
+
 
 
 
